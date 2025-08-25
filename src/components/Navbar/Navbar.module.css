@@ -1,0 +1,39 @@
+nav{
+    position: fixed;
+    top: 0;
+    height: 65px;
+    width: 100vw;
+    background-color: rgb(39, 76, 119);
+    color: #fff;
+}
+.content{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.link:hover{
+    color: #e69e9e;
+}
+.profile-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+}
