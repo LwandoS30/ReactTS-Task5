@@ -3,7 +3,7 @@
 import { Login } from './components5/Login/Login'
 import { Register } from './components5/Register/Register'
 import { Landing } from './components5/Landing/Landing'
-import {  Routes, Route } from 'react-router'
+import { BrowserRouter, Routes, Route } from 'react-router'
 
 import './App.css'
 
@@ -14,12 +14,14 @@ function App() {
      <div className='app-container'>
         <div className='scrollable'> 
            {/* < Register /> */}
-          <Routes>
-            <Route path='/' element={<Landing />} ></Route>
-            <Route path='/login' element={<Login />} ></Route>
-            <Route path='/register' element={<Register />} ></Route>
-            <Route path='*' element={<div>404 Not Found</div>} ></Route>
-          </Routes>
+           <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Landing />} ></Route>
+              <Route path='/login' element={<Login />} ></Route>
+              <Route path='/register' element={<Register />} ></Route>
+              <Route path='*' element={<div>404 Not Found</div>} ></Route>
+            </Routes>
+          </BrowserRouter>
          </div> 
       </div>  
      

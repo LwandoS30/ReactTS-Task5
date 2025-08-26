@@ -1,0 +1,39 @@
+h3{
+    color: rgb(20, 20, 20);
+    width: 100vw;;
+    align-self: center;
+}
+.landing-container{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    width: 100vw;;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.intro-container, .shopping-list-buttons{
+    align-items: center;
+    width: 50%;
+}
+
+.input-add, .input-update, .input-delete{
+    width: 50px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.input-add{
+    background-color: rgb(31, 155, 31);
+}
+.input-update{
+    background-color: rgb(216, 216, 50);
+}
+.input-delete{
+    background-color: #fd1a01;  
+}

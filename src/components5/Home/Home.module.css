@@ -1,0 +1,22 @@
+.home-container{
+    padding: 10px;
+    background-color: skyblue;
+    color: #fff;
+    
+}
+.itemName, .itemQuantity, .categorOption{
+    width: 80%;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.notes{
+    width: 80%;
+    border-radius: 10px;
+}
+.addItem, .updateItem, .deleteItem{
+    width: 20%;
+    margin-right: 5px;
+}
