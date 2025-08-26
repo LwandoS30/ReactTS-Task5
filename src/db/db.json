@@ -1,13 +1,23 @@
 {
-    "user":[
-            {
-            "id": 1,
-            "email": "lwando@gmail.com",
-            "password": "123456",
-            "confirmPassword": "123456",
-            "firstName": "Lwando",
-            "lastName": "Sodinga",
-            "cellNumber": "0655940699"
-        }
-    ]
+  "users": [
+    {},
+    {
+      "id": "814b",
+      "email": "lwandomlindo@gmail.com",
+      "password": "123456789123",
+      "confirmPassword": "123456789123",
+      "firstName": "Lwando",
+      "lastName": "Sodinga",
+      "cellNumber": "0655940699"
+    },
+    {
+      "id": "492c",
+      "email": "ntuthukohlongwane62@gmail.com",
+      "password": "Ntuthuko123';'",
+      "confirmPassword": "Ntuthuko123';'",
+      "firstName": "Ntuthuko",
+      "lastName": "Hlongwane",
+      "cellNumber": "0823611398"
+    }
+  ]
 }

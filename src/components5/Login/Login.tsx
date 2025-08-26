@@ -5,7 +5,7 @@ import { Navbar } from '../Navbar/Navbar'
 import { Footer } from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 
-export const Login: React.FC = () => {
+export const Login: React.FC<any> = () => {
     return(
         <ContentContainer>
             <Navbar />
@@ -28,7 +28,5 @@ export const Login: React.FC = () => {
                 </div>
             <Footer />
         </ContentContainer>
-        
-        
-    )
+    );
 }

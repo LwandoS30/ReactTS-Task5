@@ -13,15 +13,15 @@ function App() {
     <>
      <div className='app-container'>
         <div className='scrollable'> 
-           {/* < Register /> */}
-           <BrowserRouter>
+           < Register /> 
+           {/* <BrowserRouter>
             <Routes>
               <Route path='/' element={<Landing />} ></Route>
-              <Route path='/login' element={<Login />} ></Route>
-              <Route path='/register' element={<Register />} ></Route>
+              <Route path='login' element={<Login />} ></Route>
+              <Route path='register' element={<Register />} ></Route>
               <Route path='*' element={<div>404 Not Found</div>} ></Route>
             </Routes>
-          </BrowserRouter>
+          </BrowserRouter> */}
          </div> 
       </div>  
      

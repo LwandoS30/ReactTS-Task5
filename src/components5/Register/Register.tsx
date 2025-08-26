@@ -3,6 +3,8 @@ import styles from './Register.module.css'
 import { ContentContainer } from '../../components5/ContentContainer'
 import { Navbar } from '../Navbar/Navbar'
 import { Footer } from '../Footer/Footer'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 export const Register: React.FC = () => {
 
@@ -16,6 +18,7 @@ export const Register: React.FC = () => {
     })
 
     type FormErrors = {
+        
         firstName?: string, 
         lastName?: string, 
         cellNumber?: string, 
@@ -73,7 +76,9 @@ export const Register: React.FC = () => {
         setValid(isValid);
 
         if(Object.keys(validationErrors).length === 0){
-            alert('Form submitted successfully');
+            axios.post('http://localhost:8000/users', formData)
+            .then(result => console.log(result))
+            .catch(err => console.log(err))
         }
     }
 
@@ -82,10 +87,16 @@ export const Register: React.FC = () => {
             <Navbar />
             <div className={styles['register-container']}>
                 <h2>Register</h2>
-                {
-                    
-                }
+                
                 <form onSubmit={handleSubmit}>
+                    {
+                    valid ? <></> :
+                        <span className={styles['text-error']}>
+                            {errors.firstName}; {errors.lastName}; {errors.email};
+                            {errors.password}; {errors.confirmPassword}; {errors.cellNumber}
+                        </span>
+                    
+                    }
                     <input 
                         className={styles['input-class']} 
                         type="email" 
@@ -128,11 +139,11 @@ export const Register: React.FC = () => {
                         placeholder='Cell number'
                         onChange={(e) => setFormData ({...formData, cellNumber: e.target.value})} 
                     />
-                    <input 
-                        className={styles['register-button']} 
-                        type="button" 
-                        value={'Register'} 
-                    />
+                    <button type="submit" className={styles['register-button']} >Register</button> 
+                        
+                        
+                               
+                
                 </form>
             </div>
             <Footer />
